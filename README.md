@@ -26,17 +26,27 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Installation schema typeorm database
+
+```bash
+# create file ormconfig.json to typeorm config
+$ yarn pretypeorm
+
+# create file ini_project test
+$ yarn typeorm:migration:generate -- init_test
+```
+
 ## Installation
 
 ```bash
-$ npm install or yarn
+$ yarn
 ```
 
 ## Running the app
 
 ```bash
 # init database script docker image - postgres(default)
-$ npm run start:dev:db
+$ yarn start:dev:db
 
 # init typeorm create migration
 $ yarn typeorm:migration:run
