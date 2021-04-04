@@ -1,14 +1,11 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Post, Body } from '@nestjs/common';
 import { ItemService } from './item.service';
+import { ItemDTO } from './item.dto';
+import { User } from '../user.decorator';
 
 @Controller('item')
 export class ItemController {
   constructor(private serv: ItemService) {}
-
-  @Get()
-  public async getAll() {
-    return await this.serv.getAll();
-  }
 
   @Get()
   public async getAll(): Promise<ItemDTO[]> {
