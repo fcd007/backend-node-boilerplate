@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-SERVER="my_database_server";
-PW="mysecretpassword";
-DB="my_database";
+SERVER="postgresdb";
+PW="docker@12357";
+DB="database_test";
 
 echo "echo stop & remove old docker [$SERVER] and starting new fresh instance of [$SERVER]"
 (docker kill $SERVER || :) && \
@@ -15,7 +15,8 @@ echo "echo stop & remove old docker [$SERVER] and starting new fresh instance of
 
 # wait for pg to start
 echo "sleep wait for pg-server [$SERVER] to start";
-SLEEP 3;
+sleep 5
+>&2 echo 'PostgreSQL is available.'
 
 # create the db 
 echo "CREATE DATABASE $DB ENCODING 'UTF-8';" | docker exec -i $SERVER psql -U postgres
