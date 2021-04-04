@@ -29,20 +29,29 @@
 ## Installation
 
 ```bash
-$ npm install
+$ npm install or yarn
 ```
 
 ## Running the app
 
 ```bash
+# init database script docker image - postgres(default)
+$ npm run start:dev:db
+
+# init typeorm create migration
+$ yarn typeorm:migration:run
+
+# Seed to database data test 
+$ yarn start:dev:db:seed
+
 # development
-$ npm run start
+$ yarn start:dev
 
 # watch mode
-$ npm run start:dev
+$ yarn start:dev
 
 # production mode
-$ npm run start:prod
+$ yarn start:prod
 ```
 
 ## Test
