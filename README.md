@@ -35,6 +35,9 @@ $ yarn
 ## Installation schema typeorm database
 
 ```bash
+# create file .env config database
+$ cp .env.example .env
+
 # create file ormconfig.json to typeorm config
 $ yarn pretypeorm
 
