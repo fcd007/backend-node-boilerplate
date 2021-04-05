@@ -36,3 +36,5 @@ lerna-debug.log*
 # remove config database
 ormconfig.json
 .env
+.env.local
+.env.staging
