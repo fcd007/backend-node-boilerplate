@@ -26,6 +26,12 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Installation dependencies
+
+```bash
+$ yarn
+```
+
 ## Installation schema typeorm database
 
 ```bash
@@ -34,12 +40,6 @@ $ yarn pretypeorm
 
 # create file ini_project test
 $ yarn typeorm:migration:generate -- init_test
-```
-
-## Installation
-
-```bash
-$ yarn
 ```
 
 ## Running the app
