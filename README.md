@@ -35,27 +35,29 @@ $ yarn
 ## Installation schema typeorm database
 
 ```bash
+# create file .env to database config
+$ cp .env.example .env
 # create file ormconfig.json to typeorm config
 $ yarn pretypeorm
 
-# create file ini_project test
-$ yarn typeorm:migration:generate -- init_test
-```
-
-## Running the app
-
-```bash
 # init database script docker image - postgres(default)
 $ yarn start:dev:db
+
+# create file ini_project test
+$ yarn typeorm:migration:generate -- init_test
 
 # init typeorm create migration
 $ yarn typeorm:migration:run
 
 # Seed to database data test 
 $ yarn start:dev:db:seed
+```
 
-# development
-$ yarn start:dev
+## Running the app
+
+```bash
+# development start container docker database - restart
+$ yarn start:docker
 
 # watch mode
 $ yarn start:dev
