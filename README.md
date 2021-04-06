@@ -41,8 +41,6 @@ $ cp .env.example .env
 # create file ormconfig.json to typeorm config
 $ yarn pretypeorm
 
-# create file ini_project test
-$ yarn typeorm:migration:generate -- init_test
 ```
 
 ## Running the app
@@ -50,6 +48,9 @@ $ yarn typeorm:migration:generate -- init_test
 ```bash
 # init database script docker image - postgres(default)
 $ yarn start:dev:db
+
+# create file ini_project test
+$ yarn typeorm:migration:generate -- init_test
 
 # init typeorm create migration
 $ yarn typeorm:migration:run
