@@ -2,8 +2,8 @@
 set -e
 
 SERVER="postgresdb_test";
-PW="postegres12345";
-DB="postegresdb";
+PW="postgres12345";
+DB="postgresdb";
 
 echo "echo stop & remove old docker [$SERVER] and starting new fresh instance of [$SERVER]"
 (docker kill $SERVER || :) && \
