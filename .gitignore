@@ -38,3 +38,4 @@ ormconfig.json
 .env
 .env.local
 .env.staging
+./src/migratio/*
