@@ -35,25 +35,11 @@ $ yarn
 ## Installation schema typeorm database
 
 ```bash
-<<<<<<< HEAD
-# create file .env config database
-$ cp .env.example .env
-
-# create file ormconfig.json to typeorm config
-$ yarn pretypeorm
-
-```
-
-## Running the app
-
-```bash
-=======
 # create file .env to database config
 $ cp .env.example .env
 # create file ormconfig.json to typeorm config
 $ yarn pretypeorm
 
->>>>>>> ca6692f8a46c2db7df968d894a86b4c438421157
 # init database script docker image - postgres(default)
 $ yarn start:dev:db
 
